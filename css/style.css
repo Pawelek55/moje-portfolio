@@ -1,0 +1,286 @@
+*{
+        box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+nav {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+ul {
+    text-align: right;
+    background-color: #fff;
+    margin: 0;
+
+}
+
+li {
+    display: inline-block;
+    padding: 20px 30px;
+    color: #1ac056;
+
+}
+
+li:last-child {
+    margin-right: 20px;
+
+}
+
+#mainhead {
+    background-image: url(img/header-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+
+}
+
+#mainhead div {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#mainhead h1, #mainhead h2 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 5em;
+}
+
+.green {
+    font-weight: 400;
+    color: #1ac056;
+}
+
+#mainhead h2 {
+    font-weight: 100;
+    font-size: 2em;
+}
+
+#omnie {
+    background-color: #fff;
+/*    height: 92vh;*/
+    text-align: center;
+    padding: 0 5%;
+}
+
+#omnie h2{
+    color: #000;
+    font-size: 3em;
+    font-weight: 100;
+    margin-top: 100px;
+    
+}
+
+#omnie > figure{
+    float: left;
+    margin: 0;
+    width: 50%;  
+    
+}
+
+#omnie > figure img{
+    width: 50%;
+}
+
+#omnie div{
+    padding: 100px;
+
+    font-size: 20px;
+
+}
+
+#omnie div p{
+    color: #000;
+    text-align: left;
+/*    width: 90%;*/
+}
+
+#skills{
+    text-align: center;
+/*    height: 70vh;*/
+}
+
+.skillshead h2{
+    font-size: 3em;
+    font-weight: 100;
+    padding-top: 100px;
+}
+
+#skills div{
+    padding: 50px;
+}
+
+#skills div figure{
+    display: inline-block;
+}
+
+#skills div figure figcaption{
+    padding: 10px;
+    font-size: 30px;
+}
+
+/*portfolio*/
+
+#portfolio{
+/*    height: 80vh;*/
+}
+
+#portfolio h2{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#portfolio .one{
+    height: 304px;
+/*    ustawiamy w procentach */
+    width: 1200px; 
+    margin: auto;
+}
+
+#portfolio .back{
+    float: left;   
+    margin: 0;
+    width: 33.33333%;
+    height: 304px;
+    background-size: cover;
+}
+
+#portfolio .photo1{
+    background-image: url(img/portfolio1.jpg);
+}
+
+#portfolio .photo2{
+    background-image: url(img/portfolio4.jpg);
+}
+
+#portfolio .photo3{
+    background-image: url(img/portfolio2.jpg);
+}
+
+
+#portfolio .mask{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+#portfolio .mask:hover {
+    opacity: 1;
+}
+
+#portfolio .mask .border{
+    border: 2px solid #fff;
+    height: 100%;
+    padding: 0 10px;
+    position: relative;
+}
+
+#portfolio .mask .border .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+#contact{
+    color: #fff;
+    background-color: #213b50;
+}
+
+#contact .daneadresowe{
+    float: left;
+    width: 50%;
+    opacity: 1;
+}
+
+
+#contact .lewyadres{
+    text-align: left;
+}
+
+#contact h2{
+    font-weight: 100;
+    font-size: 4em;
+    padding: 20px;
+    padding-left: 100px;
+}
+
+
+#contact address{
+/*    padding: 20px 0;*/
+    font-size: 20px;
+    padding: 20px 100px;
+}
+
+#contact .media{
+    padding: 80px 50px;
+    padding-left: 100px;
+}
+
+
+#contact .media a{
+    font-size: 2em;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 0 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    
+}
+
+#contact .media a:hover{
+    color: #1ac056;
+    border: 2px solid #1ac056;
+    border: 1px solid #1ac056;
+}
+
+#contact .prawyadres{
+    margin-top: 100px;
+}
+
+#contact form input, textarea{
+    padding: 20px 10px;
+    margin: 5px;
+    width: 60%;
+    background-color: #042966;
+}
+
+footer{
+    background-color: #061b3d;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
+    padding: 20px 100px;
+    color: #fff;
+}
